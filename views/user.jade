@@ -1,0 +1,9 @@
+extends layout
+
+block content
+  include ./partials/navbar.jade
+   if users
+      each client in users
+        li=client.name
+   else
+      p no client found
